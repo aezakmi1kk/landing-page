@@ -1,14 +1,121 @@
 @import "mixins.scss";
 
-
-.hero-box{
-    background-image: url(../image/Img.jpg);
-    width: 100%;
-    height: 45vh;
-    background-size: cover;
-    @include textColor;
+@font-face {
+  font-family: "JosefinSans";
+  src: url(../fonts/static/JosefinSans-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-.header a{
-    text-decoration: none;
+@font-face {
+  font-family: "JosefinSans-Bold";
+  src: url(../fonts/static/JosefinSans-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: "JosefinSans";
+}
+//Стили header
+.header a {
+  text-decoration: none;
+  display: flex;
+  color: white;
+}
+.header li {
+  list-style: none;
+}
+.site-logo {
+  font-family: "JosefinSans-Bold";
+  font-size: 24px;
+  color: white;
+}
+//Эллементы header в ряд
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  margin-left: 310px;
+  width: 965px;
+  height: 75px;
+  z-index: 10;
+}
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.navbar-buttons li {
+  margin-right: 16px;
+  font-size: 16px;
+}
+.navbar-buttons li:last-child {
+  margin-right: 0;
+}
+.navbar-buttons li:nth-child(3n) {
+  margin-right: 24px;
+}
+.navbar {
+  margin-right: 20px;
+}
+.header-buttons {
+  display: flex;
+}
+
+//стилизация кнопок хедера
+.login-button {
+  width: 112px;
+  height: 45px;
+  background-color: #5e4dcd;
+  color: #ffffff;
+  @include buttonTextStyle;
+}
+
+.regist-button {
+  width: 132px;
+  height: 45px;
+  background-color: #ffd2dd;
+  color: #5e4dcd;
+  @include buttonTextStyle;
+}
+
+//Стили section-1 hero-box
+.hero-box {
+  width: 100%;
+  height: 100vh;
+}
+.wrapper-hero-box {
+  background-image: url(../image/hero-bg.jpg);
+  width: 100%;
+  height: 715px;
+  background-size: cover;
+  @include textColor;
+  position: relative;
+}
+.content-hero-box {
+  position: absolute;
+  top: 260px;
+  left: 310px;
+}
+.hero-box-header {
+  margin: 0;
+  font-size: 60px;
+  font-weight: bold;
+}
+.hero-box-description {
+  font-size: 24px;
+}
+//стиль для кнопки get started
+.button-get-started {
+  width: 220px;
+  height: 57px;
+  background-color: #5e4dcd;
+  color: #ffffff;
+  @include buttonTextStyle;
 }
