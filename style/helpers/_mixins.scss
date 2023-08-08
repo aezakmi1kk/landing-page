@@ -1,0 +1,8 @@
+//__DEFAULT_BUTTON_STYLES__
+@mixin buttonTextStyle {
+  border: none;
+  font-size: $fs-l;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+

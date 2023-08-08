@@ -1,0 +1,49 @@
+
+.payments-section {
+    width: 100%;
+  }
+  .wrapper-payments-section {
+    background-image: url(../image/section-3-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 696px;
+  }
+  .payments-section-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  //Стили для блока с описанием
+  .payments-section-description{
+    width: calc(50% - 15px);
+    margin-top: 160px;
+  }
+  .payments-section-description h3 {
+    font-size: $fs-xxl;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 64px;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  .payments-section-description p {
+    color: #fff;
+    font-size: $fs-xl;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+  }
+  
+  //Стили для блока с графиком
+  .payments-section-chart{
+    width: calc(50% - 15px);
+    margin-top: 122px;
+  }
+  .payments-img{
+    width: 100%;
+  }

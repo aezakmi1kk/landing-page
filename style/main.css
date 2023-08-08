@@ -1,3 +1,4 @@
+@import "./helpers/_normalize.css";
 @font-face {
   font-family: "JosefinSans";
   src: url(../fonts/static/JosefinSans-Regular.ttf);
@@ -12,20 +13,13 @@
   font-display: swap;
   font-style: normal;
 }
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
-
-.container {
-  width: 1320px;
-  margin: auto;
-}
-
-body {
-  font-family: "JosefinSans";
-}
-
 .header {
   position: fixed;
   padding-top: 18px;
@@ -39,7 +33,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
 }
 
 .header li {
@@ -48,8 +43,9 @@ body {
 
 .site-logo {
   font-family: "JosefinSans-Bold";
-  font-size: 24px;
-  color: white;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
 }
 
 .header-wrapper {
@@ -79,7 +75,7 @@ body {
 
 .navbar-buttons li {
   margin-right: 16px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .navbar-buttons li:last-child {
@@ -91,40 +87,36 @@ body {
 }
 
 .login-button {
-  width: 112px;
-  height: 45px;
-  background-color: #5e4dcd;
-  color: #ffffff;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  padding-top: 7px;
+  max-width: 135px;
+  background-color: #5e4dcd;
+  color: #fff;
+  padding: 16px 40px 14px 40px;
 }
 
 .regist-button {
-  width: 132px;
-  height: 45px;
-  background-color: #ffd2dd;
-  color: #5e4dcd;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  padding-top: 7px;
+  max-width: 160px;
+  background-color: #ffd2dd;
+  color: #5e4dcd;
+  padding: 16px 40px 14px 40px;
 }
 
 .hero-box {
+  background-image: url(../image/hero-bg.jpg);
   width: 100%;
   height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wrapper-hero-box {
-  background-image: url(../image/hero-bg.jpg);
-  width: 100%;
-  height: 715px;
-  background-size: cover;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,36 +126,52 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-hero-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero-box-header {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: bold;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .hero-box-description {
-  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .button-get-started {
-  width: 220px;
-  height: 57px;
+  max-width: 270px;
+  padding: 24px 24px 22px 24px;
   background-color: #5e4dcd;
-  color: #ffffff;
+  color: #fff;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  padding-top: 7px;
 }
 
-.second-section {
+.offer-section {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   position: relative;
 }
 
-.wrapper-second-section {
+.wrapper-offer-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,29 +185,30 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
-.header-description {
-  margin-top: 160px;
-}
-
-.second-section-header {
+.offer-section-header {
   font-family: inherit;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
+  margin: 0;
 }
 
-.second-section-description {
+.offer-section-description {
   font-family: inherit;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
   text-align: center;
   line-height: 32px;
   color: #999;
+  margin: 0;
+  margin-top: 24px;
 }
 
-.section2-decoration {
+.offer-decoration {
   position: absolute;
   top: 38%;
   left: 2%;
@@ -223,7 +232,7 @@ body {
   width: calc(33% - 16px);
   -webkit-box-shadow: 1px 10px 35px #dbdbdb;
           box-shadow: 1px 10px 35px #dbdbdb;
-  background-color: white;
+  background-color: #fff;
 }
 
 .card-header-block {
@@ -234,7 +243,7 @@ body {
   width: 100%;
 }
 
-.buttons {
+.card-buttons {
   position: absolute;
   top: 24px;
   left: 24px;
@@ -242,7 +251,7 @@ body {
 
 .button {
   border: none;
-  background-color: #ffffff;
+  background-color: #fff;
   opacity: 0.8;
   text-transform: uppercase;
   font-weight: bold;
@@ -254,7 +263,7 @@ body {
 }
 
 .card-header h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
@@ -263,7 +272,7 @@ body {
 
 .card-header p {
   color: #999;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -272,7 +281,7 @@ body {
 
 .card-description {
   margin-top: 24px;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -282,83 +291,134 @@ body {
   margin-top: 24px;
 }
 
-.card-progress-info p {
-  font-size: 14px;
+.metric {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background-color: #ECECEC;
+  margin-bottom: 10px;
+}
+
+.metric-amount {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: #5e4dcd;
+}
+
+.metric-values {
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   margin: 0;
 }
 
-.card-progress-info span {
-  font-size: 16px;
+.main-values {
+  font-size: 1rem;
   font-style: normal;
   font-weight: bold;
   line-height: 24px;
   color: #5e4dcd;
-}
-
-.card-progress-info img {
-  width: 100%;
-}
-
-.central-line {
-  width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.button-view {
-  width: 100%;
-  background-color: #ffd2dd;
-  color: #5e4dcd;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding: 24px 40px 22px 40px;
-  border: none;
-}
-
-.central-card-content {
-  margin: 24px;
-}
-
-.central-card-content p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.central-card-content span {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 24px;
 }
 
 .card:nth-child(2) {
-  -webkit-box-shadow: 0 70px 100px gray;
-          box-shadow: 0 70px 100px gray;
+  -webkit-box-shadow: 0 70px 80px #999;
+          box-shadow: 0 70px 80px #999;
 }
 
 .button-view-all-projects {
+  max-width: 270px;
+  margin-top: 80px;
+  border: 1px solid #5e4dcd;
+  background-color: transparent;
   color: #5e4dcd;
-  font-size: 16px;
-  font-style: normal;
+  padding: 24px 40px 22px 40px;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 24px 40px 14px 40px;
-  border: #5E4DCD solid 1px;
-  margin-top: 80px;
-  margin-bottom: 160px;
+}
+
+.payments-section {
+  width: 100%;
+}
+
+.wrapper-payments-section {
+  background-image: url(../image/section-3-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 696px;
+}
+
+.payments-section-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.payments-section-description {
+  width: calc(50% - 15px);
+  margin-top: 160px;
+}
+
+.payments-section-description h3 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 64px;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.payments-section-description p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+}
+
+.payments-section-chart {
+  width: calc(50% - 15px);
+  margin-top: 122px;
+}
+
+.payments-img {
+  width: 100%;
+}
+
+.container {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "JosefinSans";
+}
+
+button {
+  cursor: pointer;
 }
