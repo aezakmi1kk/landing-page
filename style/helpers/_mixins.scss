@@ -6,3 +6,29 @@
   font-weight: bold;
 }
 
+//__ADAPTIVE_MIXINS__
+@mixin for-mobile-lg {
+  @media (min-width: $screen-width-mobile-lg) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (min-width: $screen-width-tablet) {
+    @content;
+  }
+}
+@mixin for-tablet-lg {
+  @media (min-width: $screen-width-tablet-lg) {
+    @content;
+  }
+}
+@mixin for-laptop {
+  @media (min-width: $screen-width-laptop) {
+    @content;
+  }
+}
+@mixin for-laptop-md {
+  @media (min-width: $screen-width-laptop-md) {
+    @content;
+  }
+}
