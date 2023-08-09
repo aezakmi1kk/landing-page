@@ -526,14 +526,9 @@ template {
 
 .payments-section {
   width: 100%;
-}
-
-.wrapper-payments-section {
   background-image: url(../image/section-3-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 696px;
 }
 
 .payments-section-content {
@@ -546,11 +541,11 @@ template {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 75px;
 }
 
 .payments-section-description {
-  width: calc(50% - 15px);
+  width: calc(50% - 37.5px);
   margin-top: 160px;
 }
 
@@ -574,8 +569,9 @@ template {
 }
 
 .payments-section-chart {
-  width: calc(50% - 15px);
-  margin-top: 122px;
+  width: calc(50% - 37.5px);
+  margin-top: 120px;
+  margin-bottom: 186px;
 }
 
 .payments-img {
