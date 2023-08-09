@@ -1,0 +1,55 @@
+.opportunities-section {
+  width: 100%;
+  background-color: $default-white;
+  position: relative;
+}
+.opportunities-section-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+  padding-bottom: 180px;
+}
+.opportunities-section-description {
+  width: calc(60% - 65px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 180px;
+}
+.opportunities-section-description h3 {
+  color: $dark-gray;
+  font-size: $fs-xxl;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  margin: 0;
+}
+.opportunities-section-description p {
+  color: $default-gray;
+  font-size: $fs-xl;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  margin-top: 24px;
+}
+.opportunities-button{
+    @include buttonTextStyle;
+    max-width: 270px;
+    color: $default-white;
+    background-color: $default-purple;
+    padding: 24px 40px 22px 40px;
+    margin-top: 40px;
+}
+.money-tree {
+  width: calc(40% - 65px);
+  margin-top: 160px;
+  z-index: 1;
+}
+
+.opportunities-decoration{
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
