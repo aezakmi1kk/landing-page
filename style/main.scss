@@ -12,6 +12,7 @@
 @import "./core/offer-section";
 @import "./core/payments-section";
 @import "./core/opportunities-section";
+@import "./core/footer";
 
 .container {
   width: 1320px;
@@ -30,7 +31,9 @@ html {
 body {
   font-family: "JosefinSans";
 }
-
+li{
+  list-style: none;
+}
 button {
   cursor: pointer;
 }

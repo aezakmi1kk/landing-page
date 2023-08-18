@@ -655,6 +655,183 @@ template {
   right: 0;
 }
 
+.footer-section {
+  width: 100%;
+  background-color: #ECECEC;
+}
+
+.top-footer-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-block-description {
+  margin-bottom: 192px;
+}
+
+.top-block-description h3 {
+  color: #333;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1.44px;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.top-block-description p {
+  color: #333;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.205px;
+  margin: 0;
+}
+
+.footer-list-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.footer-list-block ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  max-width: 270px;
+  width: 100vw;
+}
+
+.footer-list-block a {
+  text-decoration: none;
+  color: #333;
+}
+
+.services-list,
+.about-list {
+  max-width: 270px;
+}
+
+.footer-list-header {
+  color: #333;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.back-button {
+  width: 50px;
+  height: 50px;
+}
+
+.bottom-footer-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 60px;
+}
+
+.subscribe-block {
+  width: 100%;
+}
+
+.subscribe-form-description {
+  color: #333;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  max-width: 370px;
+}
+
+.subscribe-form-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 370px;
+}
+
+.submit-form {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  height: 50px;
+  width: 100%;
+}
+
+.submit-form:focus {
+  outline: none;
+}
+
+.submit-button {
+  background-color: #5e4dcd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  padding: 13px;
+}
+
+.submit-svg-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.svg-icon {
+  max-width: 21px;
+  max-height: 16px;
+}
+
 .container {
   width: 1320px;
   margin-left: auto;
@@ -675,6 +852,10 @@ html {
 
 body {
   font-family: "JosefinSans";
+}
+
+li {
+  list-style: none;
 }
 
 button {

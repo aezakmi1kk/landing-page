@@ -1,0 +1,129 @@
+.footer-section {
+  width: 100%;
+  background-color: $light-gray;
+}
+
+//__TOP BLOCK STYLE__
+.top-footer-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.top-block-description {
+  margin-bottom: 192px;
+}
+.top-block-description h3 {
+  color: $dark-gray;
+  font-size: $fs-xl;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1.44px;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.top-block-description p {
+  color: $dark-gray;
+  font-size: $fs-m;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.205px;
+  margin: 0;
+}
+//__STYLES FOR LIST BLOCKS__
+.footer-list-block {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 60px;
+}
+.footer-list-block ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 270px;
+  width: 100vw;
+}
+.footer-list-block a{
+  text-decoration: none;
+  color: $dark-gray;
+}
+.services-list, 
+.about-list {
+  max-width: 270px;
+}
+.footer-list-header {
+  color: $dark-gray;
+  font-size: $fs-footer-list-header;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.back-button {
+  width: 50px;
+  height: 50px;
+}
+
+//__BOTTOM BLOCK STYLE__
+.bottom-footer-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 60px;
+}
+.subscribe-block {
+  width: 100%;
+}
+.subscribe-form-description {
+  color: $dark-gray;
+  font-size: $fs-xl;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  max-width: 370px;
+}
+.subscribe-form-submit {
+  display: flex;
+  align-items: flex-end;
+  max-width: 370px;
+}
+.submit-form {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $default-gray;
+  height: 50px;
+  width: 100%;
+}
+.submit-form:focus {
+  outline: none;
+}
+.submit-button {
+  background-color: $default-purple;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 13px;
+}
+.submit-svg-icon{
+  width: 24px;
+  height: 24px;
+}
+.footer-icons {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+.svg-icon {
+  max-width: 21px;
+  max-height: 16px;
+}
